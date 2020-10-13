@@ -70,7 +70,12 @@ namespace NeptunoSql.Windows
                     celda.Value = stock;
                     break;
                 case 3:
-                    StockInProductosDataGridView.Rows.RemoveAt(e.RowIndex);
+                    DialogResult dr = MessageBox.Show("¿Desea borrar de la lista?", "Borrar", MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+                    if (dr==DialogResult.Yes)
+                    {
+                        StockInProductosDataGridView.Rows.RemoveAt(e.RowIndex);
+                    }
                     break;
                 default:break;
             }

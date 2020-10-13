@@ -59,7 +59,7 @@ namespace NeptunoSql.Windows
                 return;
             }
 
-            DialogResult dr = MessageBox.Show("¿Desea agregar el producto?", "Agregar", MessageBoxButtons.YesNo,
+            DialogResult dr = MessageBox.Show("¿Desea agregar el producto? ", "Agregar", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
 
             if (dr==DialogResult.Yes)
